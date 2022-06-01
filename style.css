@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color:  #000000;
+  --hue: 195;
+  --second-color: hsla(var(--hue), 91%, 25%, 1);
+}
+
+body{
+  width: 100%;
+  background-color: var(--bg-color);
+  font-size: 2.0rem;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  margin: 11.5rem auto 8.7rem;
+  width: clamp(60rem, 65rem + 35vw , 112vw);
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div {
+  display: flex;
+  gap: 8px;
+
+}
+header label {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+header input {
+  color: #E1E1E6;
+  padding: 16px;
+  background-color: #06181C;
+  width: 46.2rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 5px;
+}
+header button {
+  
+  width: 17rem;
+  height: 4.8rem;
+  background-color: var(--second-color);
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  word-spacing: 8px;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+header button:hover {
+  background-color: #fff;
+  color: #065E7C;
+}
+header button strong {
+  font-size: 2rem;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  width: fit-content;
+  border: 1px solid #4A808C;
+  border-radius: 12px;
+
+}
+table{
+  width: clamp(60rem, 65rem + 35vw , 112vw);
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+table thead {
+
+  height: 6.4rem;
+  background: #092D38;
+  color: #E1E1E6;
+}
+
+table thead th {
+  line-height: 160%;
+  font-weight: 700;
+  font-size: 2.0rem;
+
+  padding-left: 4rem;
+  text-align: left;
+}
+
+table tbody img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 999px;
+  
+}
+table tbody .userinfo {
+  display: flex;
+  align-items: center;
+  gap:1.6rem;
+}
+table tbody tr:nth-child(even){
+  background-color: #06181C;
+  border-top: 1px solid #4A808C;
+
+}
+table tbody tr:nth-child(odd){
+  border-top: 1px solid #124555;
+}
+
+table tbody td {
+  padding: 2.4rem 0 2.4rem 4rem; 
+  color: #E1E1E6;
+  font-weight: 700;
+}
+table tbody td p{
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+table tbody td a {
+  text-decoration: none;
+  color: #E1E1E6;
+}
+
+table tbody tr .remove {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #F75A68;
+  font-size: 2.0rem;
+  line-height: 160%;
+}
